@@ -14,15 +14,16 @@
 
 <body>
     <!-- header start  -->
-
-    <!-- navbar  -->
     <header>
         <nav class="navbar bg-light navbar-expand-lg navbar-light bg-light container">
 
-            <div class="container-fluid">
+            <div class="container">
 
 
-                <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="" width="164" height="28"></a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="164" height="28">
+                </a>
+                <!-- hamburger icon  -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +64,9 @@
             </div>
 
         </nav>
-    </header>
 
-    <!-- main content  -->
-
-    <main>
-        <section class="container mt-5">
-            <!-- carousel  -->
+        <!-- carousel  -->
+        <section class="container pt-5">
             <div class="carousel">
                 <div id="carouselExampleControls" class="carousel slide rounded"
                     style="background-color: rgb(240, 232, 232);" data-bs-ride="carousel">
@@ -148,24 +145,31 @@
                     </button>
                 </div>
             </div>
+        </section>
+    </header>
+
+    <!-- main content  -->
+    <main>
+        <section class="container mt-5">
+
             <!-- catagoris  -->
-            <div class="container catagoris  mb-4  mt-5">
+            <div class="catagoris  mb-4  mt-5">
                 <div class="row g-4 ">
-                    <div class="col-md-4 cat1 ">
+                    <div class="col-md-6 col-12 col-lg-4 cat1 ">
                         <div class="d-flex rounded justify-content-center align-items-center"
                             style="background-color:orange ;">
                             <h1 class="text-white fw-bolder">Watch</h1>
                             <img src="images/categories/watch.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4 cat-2 ">
+                    <div class="col-md-6 col-12 col-lg-4 cat-2 ">
                         <div class="d-flex rounded justify-content-center align-items-center"
                             style="background-color:orchid;">
                             <h1 class="text-white fw-bolder">Bags</h1>
                             <img src="images/categories/bag.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4 cat3 ">
+                    <div class="col-md-6 col-12 col-lg-4 cat3 ">
                         <div class="d-flex rounded justify-content-center align-items-center"
                             style="background-color:blue ;or">
                             <h1 class="text-white fw-bolder">Shoes</h1>
@@ -177,12 +181,55 @@
             <p class="text-end text-warning">See all</p>
         </section>
         <!-- shoes card  -->
+
         <section class="container">
             <h2 class="fw-bolder">Shoes</h2>
             <div class="cards m-5">
 
-                <div class="row">
-                    <div class="col-md-4  p-3 shadow mb-5 bg-body rounded ">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Supple</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nike</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Airmax</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-md-6 p-3 shadow mb-5 bg-body rounded ">
                         <div class="card1 pe-5" style="width:20rem;">
                             <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -227,7 +274,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <p class="text-end text-warning">See all</p>
             </div>
 
@@ -235,6 +282,52 @@
 
         <!-- backpack card  -->
         <section class="container">
+            <h2 class="fw-bolder">Bags</h2>
+            <div class="cards m-5">
+
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Supple</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nike</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col shadow-lg">
+                        <div class="card border-0 h-100">
+                            <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Airmax</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-danger m-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- <section class="container">
             <h2 class="fw-bolder">Backpack</h2>
             <div class="cards m-5">
 
@@ -288,7 +381,7 @@
                 <p class="text-end text-warning">See all</p>
             </div>
 
-        </section>
+        </section> -->
 
         <div class="container p-5 d-flex justify-content-center align-items-center"
             style="background-color: rgb(240, 232, 232);">
